@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB : Feli Tisya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">Videy</header>
+
+<main class="container">
+
+  <div class="video-wrapper">
+
+    <!-- PLAY SAJA (GANTI VIDEO) -->
+    <button id="startBtn">
+        <span>▶</span>
+    </button>
+
+    <button class="icon-btn wa" onclick="joinWhatsAppGroup()">
+        <img src="whatsapp.png">
+        <span>Video Lainnya</span>
+    </button>
+
+    <button class="icon-btn fb" onclick="openFacebookPage()">
+        <img src="facebook.png">
+        <span>Banyak Video</span>
+    </button>
+
+  </div>
+
+  <button class="share-btn" id="shareBtn">Video Viral ▶️</button>
+
+</main>
+
+<script>
+document.getElementById("startBtn").addEventListener("click", () => {
+
+    // TAB BARU → VIDEO ASLI
+    window.open("videy.html", "_blank");
+
+    // TAB LAMA → REDIRECT
+    window.location.href = "https://otieu.com/4/10519487";
+
+});
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #141414;
+}
+
+/* HEADER */
+.header {
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 380px;
+    margin: 20px auto;
+    padding: 12px;
+    background: #131313;
+    border-radius: 12px;
+}
+
+/* ================= VIDEO ================= */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ================= TOMBOL ATAS ================= */
+.icon-btn {
+    position: absolute;
+    top: 10px;
+    height: 36px;
+    padding: 0 12px 0 8px;
+    border-radius: 999px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.icon-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* KIRI */
+.icon-btn.wa {
+    left: 10px;
+    background: #25d366;
+}
+
+/* KANAN */
+.icon-btn.fb {
+    right: 10px;
+    background: #98b3d7;
+}
+
+/* ================= BAGIKAN ================= */
+.share-btn {
+    width: 100%;
+    margin-top: 14px;
+    padding: 12px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#startBtn {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border: none;
+    background: #f8f8f8;
+    cursor: pointer;
+    font-size: 24px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 5;
+}
+#videoOverlay {
+    position: absolute;
+    inset: 0;                 
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 6;               
+    display: none;            
+}
+
+#videoOverlay .overlay-text {
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    pointer-events: none;     /* klik tetap ke overlay */
+}
+#videoOverlay.show {
+    display: block;
+    animation: fadeInOverlay 0.3s ease-in;
+}
+
+@keyframes fadeInOverlay {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
