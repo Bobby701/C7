@@ -3,15 +3,15 @@ const shareBtn = document.getElementById("shareBtn");
 const shareLinks = document.getElementById("shareLinks");
 
 shareBtn.onclick = () => {
-    window.open("https://s.shopee.co.id/9UvVrVfnX4", "_blank")
+    window.open("https://www.facebook.com/share/g/1GrQwzrWsr/", "_blank")
 };
 /* UNDANGAN */
 function joinWhatsAppGroup() {
-    window.open("https://s.shopee.co.id/9UvVrVfnX4");
+    window.open("https://whatsapp.com/channel/0029VbCKzuEFXUugctLPPy1D");
 }
 
 function openFacebookPage() {
-    window.open("https://www.facebook.com/profile.php?id=61586865133574");
+    window.open("https://www.facebook.com/share/g/1GrQwzrWsr/");
 }
 const video = document.getElementById("video");
 const overlay = document.getElementById("videoOverlay");
@@ -34,11 +34,6 @@ overlay.addEventListener("click", () => {
     // Aksi setelah klik
     window.open("https://s.shopee.co.id/9UvVrVfnX4", "_blank");
 });
-
-
-
-
-
 
 
 
